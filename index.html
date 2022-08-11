@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BillApps</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="card-container">
+
+    <!--Price -->
+      <div class="title">Price total</div>
+      
+      <div class="input">
+        <div class="input_align">
+         <span>$:</span>
+         <input 
+           type="text" 
+           id="Price_input" 
+           placeholder="0.00" 
+           onkeyup="calculate()"
+         />
+        </div>
+      </div>
+    
+
+   <!-- Percen -->
+      <div class="title">Tips</div>
+
+      <div class="input">
+        <div class="input_align">
+         <span>%:</span>
+         <input 
+           type="text"
+           placeholder="0"
+           id="Percen_input" 
+           onkeyup="calculate()" 
+         />
+      </div>
+      </div>
+
+
+
+   <!-- People -->
+   <div class="Input_container">
+   <div class="Input_container_left">
+      
+      <div class="title">People</div>
+
+      <!-- Increase BTN -->
+      <div class="Button_input">
+        <button class="Btn" onclick="IncreasePeople()">
+          <span class="Btn_text">+</span>
+        </button>
+
+        <!-- People -->
+        <span class="Num_people" id="people">&nbsp&nbsp 1 &nbsp&nbsp</span>
+
+        <!-- Decease BTN -->
+        <button class="Btn" onclick="DecrasePeople()">
+          <span class="Btn_text">-</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Total -->
+    <div class="Input_container_right">
+      <div class="title">Total price</div>
+      <div class="Total_text" id="TotalPrice">$0.00</div>
+    </div>
+  </div>
+
+   </div>
+  </div>
+
+
+
+    <script src="bill.js"></script>
+  </body>
+</html>

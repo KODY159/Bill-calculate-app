@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+/* Color */
+:root {
+  --background: #15161c;
+  --Card_background: #2437a6;
+
+  --Font: #f5f5f0;
+  --Input: #455ef5;
+}
+
+/* container layout */
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--background);
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  width: 400px;
+  height: 500px;
+  background: var(--Card_background);
+}
+.card-container {
+  padding: 3rem;
+}
+.Input_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+.Input_container_left {
+  flex: 50%;
+}
+.Input_container_right {
+  flex: 50%;
+}
+.Button_input {
+  padding-top: 1rem;
+}
+
+
+
+/* style */
+.title {
+  font-size: 1.5rem;
+  color: var(--Font);
+  padding-top: 1rem;
+}
+.input {
+  padding-top: 1rem;
+}
+.input_align {
+  background: var(--Input);
+  border-radius: 1.4rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+.input_align span {
+  font-size: 1.3rem;
+}
+input[type="text"] {
+  background: transparent;
+  border: transparent;
+  font-size: 1.3rem;
+}
+.Btn {
+  border: transparent;
+  background: var(--Input);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.Btn:hover {
+  background: var(--Font);
+}
+.Num_people {
+  font-size: 1.2rem;
+}
+.Total_text {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+
+
+
